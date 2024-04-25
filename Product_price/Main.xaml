@@ -1,0 +1,656 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1064,2074.4" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="44">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>UiPath.Mail</x:String>
+      <x:String>UiPath.Mail.SMTP.Activities</x:String>
+      <x:String>UiPath.Mail.Activities</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="56">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap:VirtualizedContainerService.HintSize="553.6,2009.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Default="https://www.amazon.in/" Name="amazon_url" />
+      <Variable x:TypeArguments="x:String" Name="product_name" />
+      <Variable x:TypeArguments="sd:DataTable" Name="dtProduct" />
+      <Variable x:TypeArguments="x:String" Default="https://www.pricebefore.com/" Name="pricebefore_url" />
+      <Variable x:TypeArguments="x:String" Name="strproductname" />
+      <Variable x:TypeArguments="x:String" Name="strMRP" />
+      <Variable x:TypeArguments="x:String" Name="strcurrentPrice" />
+      <Variable x:TypeArguments="x:String" Name="strHighestPrice" />
+      <Variable x:TypeArguments="x:String" Name="strLowestPrice" />
+      <Variable x:TypeArguments="x:String" Name="product_url" />
+      <Variable x:TypeArguments="sd:DataTable" Name="dtpricebefore" />
+      <Variable x:TypeArguments="s:Exception" Name="sysexception" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="512,1916.8" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+      <TryCatch.Try>
+        <Sequence sap:VirtualizedContainerService.HintSize="475.2,1685.6" sap2010:WorkflowViewState.IdRef="Sequence_13">
+          <Sequence.Variables>
+            <Variable x:TypeArguments="x:String" Name="email" />
+            <Variable x:TypeArguments="x:String" Name="password" />
+          </Sequence.Variables>
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="433.6,241.6" sap2010:WorkflowViewState.IdRef="InputDialog_2" IsPassword="False" Label="enter product name:" Title="product name">
+            <ui:InputDialog.Result>
+              <OutArgument x:TypeArguments="x:String">[product_name]</OutArgument>
+            </ui:InputDialog.Result>
+          </ui:InputDialog>
+          <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="433.6,241.6" sap2010:WorkflowViewState.IdRef="InputDialog_3" IsPassword="False" Label="Enter email id to which the report to be sent:" Title="email">
+            <ui:InputDialog.Result>
+              <OutArgument x:TypeArguments="x:String">[email]</OutArgument>
+            </ui:InputDialog.Result>
+          </ui:InputDialog>
+          <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" DisplayName="Use Browser Chrome: Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes an" sap:VirtualizedContainerService.HintSize="433.6,52.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Always" ScopeGuid="07a0487f-c1af-4c29-a87b-4cff9eb45473" Version="V1">
+            <uix:NApplicationCard.Body>
+              <ActivityAction x:TypeArguments="x:Object">
+                <ActivityAction.Argument>
+                  <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                </ActivityAction.Argument>
+                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="516.8,1227.2" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                  <Sequence.Variables>
+                    <Variable x:TypeArguments="x:String" Name="variable1" />
+                  </Sequence.Variables>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'INPUT  twotabsearchtext...'" sap:VirtualizedContainerService.HintSize="475.2,135.2" sap2010:WorkflowViewState.IdRef="TypeInto_1" Text="[product_name]">
+                    <ui:TypeInto.Target>
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="70be8b48-4e21-4e6b-8cf5-3a7201189727" InformativeScreenshot="a5e56caa5daaee9a9575abac5bdf0846" Selector="&lt;webctrl tag='INPUT' type='text' /&gt;">
+                        <ui:Target.TimeoutMS>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:Target.TimeoutMS>
+                        <ui:Target.WaitForReady>
+                          <InArgument x:TypeArguments="ui:WaitForReady" />
+                        </ui:Target.WaitForReady>
+                      </ui:Target>
+                    </ui:TypeInto.Target>
+                  </ui:TypeInto>
+                  <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'INPUT  nav-search-submi...'" sap:VirtualizedContainerService.HintSize="475.2,107.2" sap2010:WorkflowViewState.IdRef="Click_1" KeyModifiers="None" MouseButton="BTN_LEFT">
+                    <ui:Click.CursorPosition>
+                      <ui:CursorPosition Position="Center">
+                        <ui:CursorPosition.OffsetX>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:CursorPosition.OffsetX>
+                        <ui:CursorPosition.OffsetY>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:CursorPosition.OffsetY>
+                      </ui:CursorPosition>
+                    </ui:Click.CursorPosition>
+                    <ui:Click.Target>
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="35f853c6-ab8e-4b96-8484-512aac6a9e17" InformativeScreenshot="fb7ed99389d623c598696797e713bf23" Selector="&lt;webctrl tag='INPUT' type='submit' /&gt;">
+                        <ui:Target.TimeoutMS>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:Target.TimeoutMS>
+                        <ui:Target.WaitForReady>
+                          <InArgument x:TypeArguments="ui:WaitForReady" />
+                        </ui:Target.WaitForReady>
+                      </ui:Target>
+                    </ui:Click.Target>
+                  </ui:Click>
+                  <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="475.2,328.8" sap2010:WorkflowViewState.IdRef="CommentOut_7">
+                    <ui:CommentOut.Body>
+                      <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="375.2,250.4" sap2010:WorkflowViewState.IdRef="Sequence_22">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[dtProduct]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='New column 0'&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column1' Name='New column 1 Url'&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataNextLink' /&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='text' name2='Column1' attr2='href'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='h2' idx='1' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" ExtractSimilar="True" sap:VirtualizedContainerService.HintSize="333.6,157.6" sap2010:WorkflowViewState.IdRef="NExtractData_4" LimitExtractionTo="Rows" MaximumResults="5" ScopeIdentifier="07a0487f-c1af-4c29-a87b-4cff9eb45473" Version="V1">
+                          <uix:NExtractData.NextLink>
+                            <uix:TargetAnchorable BrowserURL="https://www.amazon.in/s?k=iphone&amp;crid=FNKVTVGDKSIS&amp;sprefix=ip%2Caps%2C209&amp;ref=nb_sb_ss_ts-doa-p_3_2" DesignTimeRectangle="1259, 793, 119, 60" ElementType="Text" FriendlyName="'Next'" FullSelectorArgument="&lt;webctrl aaname='Next' parentid='search' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Next' parentid='search' tag='A' type='' check:text='Next' /&gt;" Guid="d9a1b615-26eb-4e4a-b61e-2678800d3adb" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHsAAABACAYAAAA6eggRAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAUXSURBVHhe7Z3PTxtXEID9HyBOVf4BfOuhjdRcQpSDURWJgCORQ+WiNMJSDkg9lCiHAodSVSomOZSoEkkuhR4QcIjcA2pysi8VRkLyoZUTxZWt8MNOwF6QjS0CTGbW72127YXaCal3980njdDu210jfztvZm1r13d8fAwc7o1W8B0eHgKHe+Po6EiPZuT7/n72DDjcG8/Taciur8NOsWjIP0m6T/xlXAhJPTg4AG13VxdO4qV0O+Es20OUymX4N5uFzVzOVjjL9hgkOPXiha1wlu1BSDBleP2UzrI9Ck3pVMOpplPTRrBsD0NN23ahYGQ3y/Ywskun7GbZHock01RerVb1qdyQTRfojLegbCavlUqFZauAlE11m2V7HPK6v7/PslWAZSsEy1YIlq0QLFshWLZCsGyFYNkKwbIVgmUrhENla5CKxyAWT0KuKlZZqEJuDcfX8lARa9rNw0ePoMvvh7HxceMHAk7DobITEOnshA6MwK9Jsc5MHhZu4PiNRciJNWeHBiu/34fp5YxYbo5Pzp3T/1+Kr0Ih/StFp+F42R2d12E2LVYbfEzZGVj4Go89mRDLzfHz5KQhmyJ47Zr+3bGTcLbsOz/CRHdNqjXPTpFdykNqlUpAAlLbpjf7TRU0TQOtJJYlDevFa//wpLYeo/JGDP0Ho2NjFuFfXrkC5XJZjLYfZ8vG7NKWb0NXpx9GljUxRtjJrkJyZhA+Nb3ZHbhf772EqOtJmA7gusAUrBhicZ97PbjdICxk8xAd9pv2fReRVbF5E9Rn+KXLl/UTxgk4XjaJjd5CCf5RiBmSGmXXTopLMPI4YzRtmfmwfqJMxEWGp+dgAI8bwOPSNpW1KQjg+NBSbd6oUCb/Mwcheu33yGzJL9PTFuFfXLgAOzs7YrR9uEA2kl3UBVz8SWZpvewMzAZxeTiK7ZWZJET8puMgmd+uo4AeiPyV0DO961ZdidiovVarNbuemQcPLMI/O38etra2xGh7cIdsxJC0RllaJ1t7AiO0/bcPsVZTvZYRhQk6CSzisAGjfWl7fxiiG2K15IxkE9/cvGkRfrW/X4y0B9fINmruwBzqqpMtBX3eA73BvsaYsV6+ZeYHawIsNV/Amf1/Yycba+rqFFzE9aH5hFV2NQbf22xvy0YUhnBqD1zt0+u5rNcGZyCba3ZL2Mum7jk2Ts1aDwTEJZlRswdwufs+5v9p4BROzR525MmqBn9+R8cKYycuhok8ngwfIJu78ZY5STayjfWZmi4aN03DtW4cM/bOHMSe50Unjdfc8UWYjef1bTJL1J3Luo+IY1mbNNHUdd+G2ae12r+Sbk4WX2e/F6fIRnKPSZpVNmV9amkUeuWJIMPfB5E4yhIdvbzsksiTJDT/Tnfuqfk4fhj+o3aynEZ9RvcHg/wJ2sdHfCKmx4e92ZUW9ufPxhVi6u5dXfRQOMzfejHth2UrBMtWCJatECxbIVi2QrBshWDZCsGyFYJlKwTLVgiWrRC2shnvIe+DxrIVQN7hsOE+aIz3oHuXZl6+bLzDIeM96Ca1+devG+9dyngLeb/xUqnEdyX2MiSWniRAWS3rNcv2ICSVnhGyvrlpZLX8yRTL9hDy6T8kem9vT6/VMqsJlu1iSCJlrvm5XrlXr3TR5ulbwk/sc3mQYLq8Isn0U2qauuszWuIrFArA4d4oFouwi5lNkimbKdPtRBM++iiNw51Bcikok6VkasbsRBP8lF2XB8mVgk+SXAPgLR6ul5J0/CmxAAAAAElFTkSuQmCC" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='https://m.media-amazon.com/images/I/11EIQ5IGqaL._RC%7C01ZTHTZObnL.css,41GU8hNR+SL.css,31Q1jkp0osL.css,013z33uKh2L.css,017DsKjNQJL.css,0131vqwP5UL.css,41EWOOlBJ9L.css,11TIuySqr6L.css,01ElnPiDxWL.css,11fJbvhE5HL.css,01Dm5eKVxwL.css,01IdKcBuAdL.css,01y-XAlI+2*' title='Amazon.in : iphone' /&gt;" SearchSteps="FuzzySelector, Image" />
+                          </uix:NExtractData.NextLink>
+                          <uix:NExtractData.Target>
+                            <uix:TargetAnchorable DesignTimeRectangle="333, -3997, 1571, 6766" FriendlyName="'if(window.mix_csa){wind…'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;span&amp;gt;div' parentid='search' tag='DIV' /&gt;" Guid="1fe9ea50-ae14-4b35-954e-bb2e0a62e105" InformativeScreenshot="879277fb3b9d3c20da283f317fe9b503.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='https://m.media-amazon.com/images/I/11EIQ5IGqaL._RC%7C01ZTHTZObnL.css,41GU8hNR+SL.css,31Q1jkp0osL.css,013z33uKh2L.css,017DsKjNQJL.css,0131vqwP5UL.css,41EWOOlBJ9L.css,11TIuySqr6L.css,01ElnPiDxWL.css,11fJbvhE5HL.css,01Dm5eKVxwL.css,01IdKcBuAdL.css,01y-XAlI+2*' title='Amazon.in : iphone' /&gt;" SearchSteps="Selector" />
+                          </uix:NExtractData.Target>
+                        </uix:NExtractData>
+                      </Sequence>
+                    </ui:CommentOut.Body>
+                  </ui:CommentOut>
+                  <Sequence DisplayName="Data Scraping" sap:VirtualizedContainerService.HintSize="475.2,441.6" sap2010:WorkflowViewState.IdRef="Sequence_34">
+                    <Sequence.Variables>
+                      <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
+                    </Sequence.Variables>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Attach Browser 'Amazonini Page'" sap:VirtualizedContainerService.HintSize="433.6,347.2" sap2010:WorkflowViewState.IdRef="BrowserScope_3" InformativeScreenshot="46115da66371b7a769d543f0ff677f7e" Selector="&lt;html app='chrome.exe' title='Amazon.in*' url='https://www.amazon.in/*' /&gt;">
+                      <ui:BrowserScope.Body>
+                        <ActivityAction x:TypeArguments="x:Object">
+                          <ActivityAction.Argument>
+                            <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+                          </ActivityAction.Argument>
+                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="375.2,200" sap2010:WorkflowViewState.IdRef="Sequence_33">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ui:ExtractData DelayBetweenPagesMS="{x:Null}" ContinueOnError="True" DataTable="[dtProduct]" DisplayName="Extract Structured Data 'DIV'" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='title' attr='text' name2='url' attr2='href'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='h2' idx='1' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="333.6,107.2" sap2010:WorkflowViewState.IdRef="ExtractData_3" MaxNumberOfResults="5" NextLinkSelector="&lt;webctrl aaname='Next' parentid='search' tag='A' /&gt;" SimulateClick="True">
+                              <ui:ExtractData.Target>
+                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="bc09ee8d-bb97-410c-9f1a-4bc8f3d7225d" InformativeScreenshot="74e80fbcc4d01aef902a87cf653a7644" Selector="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;span&amp;gt;div' parentid='search' tag='DIV' /&gt;" WaitForReady="COMPLETE">
+                                  <ui:Target.TimeoutMS>
+                                    <InArgument x:TypeArguments="x:Int32" />
+                                  </ui:Target.TimeoutMS>
+                                </ui:Target>
+                              </ui:ExtractData.Target>
+                            </ui:ExtractData>
+                          </Sequence>
+                        </ActivityAction>
+                      </ui:BrowserScope.Body>
+                    </ui:BrowserScope>
+                  </Sequence>
+                </Sequence>
+              </ActivityAction>
+            </uix:NApplicationCard.Body>
+            <uix:NApplicationCard.TargetApp>
+              <uix:TargetApp Area="-9, -9, 1938, 1038" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAF5SURBVDhPlVM9S8NQFBW0+QOO2h+gU9vdSbuLNP0HprtDfoBIhYKgWFyFLLpUC10EjbvawcFC4qJDm4CDllQdHHq9JzdfbYLUA4e8d98959738t4cESnMA2afOSuQC40Cg31EkrBtm3Rdp4qqklqtkmEYwUoKDRi4MhZ0u12az+VoYYowzIALg6GMBVqt5gs2ymWyLCuaL+fzQcYEhikDx3H8LkzTpMt2299C2EUG0gbYf6FUikRJZiBtEFaECbo5bjb/ZxAm79Xr/nxb06KY53l+LIG0QaFYjAQ4yOQfQTdTCAy+HJkycIBLfOIQ4AtRhbe1zmajd5fGFt+J+x1hZNBZJfqwEPgbt1sifNwlOoM0NBjcEJ3z8I4XR3E3KXwOiF5aUqy1iEjiDF4vxAS8WpMqvUOiJ2bviKtvSlXkoSDWA4P4Kr89SCJMkMwcB1/qrPATupa8H/4bYHCVGxhNAC0+n8Yd9LliNvzHhOd8wvxGZEYglzWk/AJk0E1AkKBI3AAAAABJRU5ErkJggg==" InformativeScreenshot="56ba6ddf1e15b3ad45ef42d714197255.png" Selector="&lt;html app='chrome.exe' title='Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in'/&gt;" Url="[amazon_url]" />
+            </uix:NApplicationCard.TargetApp>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </uix:NApplicationCard>
+          <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dtProduct]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="433.6,276" sap2010:WorkflowViewState.IdRef="ForEachRow_3">
+            <ui:ForEachRow.Body>
+              <ActivityAction x:TypeArguments="sd:DataRow">
+                <ActivityAction.Argument>
+                  <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+                </ActivityAction.Argument>
+                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="270.4,155.2" sap2010:WorkflowViewState.IdRef="Sequence_27">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="228.8,62.4" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[CurrentRow(0).ToString]" />
+                </Sequence>
+              </ActivityAction>
+            </ui:ForEachRow.Body>
+          </ui:ForEachRow>
+          <ui:BuildDataTable DataTable="[dtpricebefore]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="433.6,60" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;ProductName&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;1000&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;MRP&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;50&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Current_x0020_Price&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;50&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Lowest_x0020_Price&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;50&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Highest_x0020_Price&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;50&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Product_x0020_URL&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;1000&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Bot_x0020_Commands&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;500&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
+          <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" DisplayName="Use Browser Chrome: Price History and Price Tracker for Amazon, Flipkart &amp; more" sap:VirtualizedContainerService.HintSize="433.6,52.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" OpenMode="Always" ScopeGuid="d7638f93-0eab-4877-9964-571d7f7e511c" Version="V1">
+            <uix:NApplicationCard.Body>
+              <ActivityAction x:TypeArguments="x:Object">
+                <ActivityAction.Argument>
+                  <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                </ActivityAction.Argument>
+                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="475.2,558.4" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dtProduct]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="1816,2866.4" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
+                    <ui:ForEachRow.Body>
+                      <ActivityAction x:TypeArguments="sd:DataRow">
+                        <ActivityAction.Argument>
+                          <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+                        </ActivityAction.Argument>
+                        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="1782.4,2744" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <Assign sap:VirtualizedContainerService.HintSize="1740.8,61.6" sap2010:WorkflowViewState.IdRef="Assign_1">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[product_url]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">[CurrentRow(1).ToString]</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <uix:NCheckState Exists="{x:Null}" DisplayName="Check App State 'INPUT search-box-home'" sap:VirtualizedContainerService.HintSize="1740.8,52.8" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="d7638f93-0eab-4877-9964-571d7f7e511c" Timeout="20" Version="V1">
+                            <uix:NCheckState.IfExists>
+                              <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="375.2,376.8" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'INPUT  search-box-home'" sap:VirtualizedContainerService.HintSize="333.6,135.2" sap2010:WorkflowViewState.IdRef="TypeInto_2" Text="[product_url]">
+                                  <ui:TypeInto.Target>
+                                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="b9fff39c-25a6-4976-8214-38ef3319b667" InformativeScreenshot="a93d6aaddbd29e3184075caaa3485426" Selector="&lt;webctrl id='search-box-home' tag='INPUT' /&gt;">
+                                      <ui:Target.TimeoutMS>
+                                        <InArgument x:TypeArguments="x:Int32" />
+                                      </ui:Target.TimeoutMS>
+                                      <ui:Target.WaitForReady>
+                                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                                      </ui:Target.WaitForReady>
+                                    </ui:Target>
+                                  </ui:TypeInto.Target>
+                                </ui:TypeInto>
+                                <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'B'" sap:VirtualizedContainerService.HintSize="333.6,107.2" sap2010:WorkflowViewState.IdRef="Click_2" KeyModifiers="None" MouseButton="BTN_LEFT">
+                                  <ui:Click.CursorPosition>
+                                    <ui:CursorPosition Position="Center">
+                                      <ui:CursorPosition.OffsetX>
+                                        <InArgument x:TypeArguments="x:Int32" />
+                                      </ui:CursorPosition.OffsetX>
+                                      <ui:CursorPosition.OffsetY>
+                                        <InArgument x:TypeArguments="x:Int32" />
+                                      </ui:CursorPosition.OffsetY>
+                                    </ui:CursorPosition>
+                                  </ui:Click.CursorPosition>
+                                  <ui:Click.Target>
+                                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="e6b1d9a5-4c47-4ea3-bb1c-25f1982dd43b" InformativeScreenshot="8c97069523fa57807ea59b831c0915ab" Selector="&lt;webctrl aaname='Check Price History' tag='B' /&gt;">
+                                      <ui:Target.TimeoutMS>
+                                        <InArgument x:TypeArguments="x:Int32" />
+                                      </ui:Target.TimeoutMS>
+                                      <ui:Target.WaitForReady>
+                                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                                      </ui:Target.WaitForReady>
+                                    </ui:Target>
+                                  </ui:Click.Target>
+                                </ui:Click>
+                              </Sequence>
+                            </uix:NCheckState.IfExists>
+                            <uix:NCheckState.IfNotExists>
+                              <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="249.6,116.8" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <Throw Exception="[New SystemException(&quot;Unable to load pricebefore page &quot;)]" sap:VirtualizedContainerService.HintSize="208,22.4" sap2010:WorkflowViewState.IdRef="Throw_1" />
+                              </Sequence>
+                            </uix:NCheckState.IfNotExists>
+                            <uix:NCheckState.Target>
+                              <uix:TargetAnchorable BrowserURL="https://www.pricebefore.com/" DesignTimeRectangle="586, 449, 552, 45" ElementType="InputBox" FriendlyName="'INPUT search-box-home'" FullSelectorArgument="&lt;webctrl id='search-box-home' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='search-box-home' tag='INPUT' type='text' aaname='Search' /&gt;" Guid="4ec9a4cd-b28e-4e35-accf-3e0afaaf7ab2" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAiwAAAAxCAYAAAD5oPKFAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAABFmSURBVHhe7Z0HjyQ1E4b3T5NFzjlnEDkJEBmRRYaDI7Mggsg5LSw5Nt9j5kV19dk93XM7ez3L+0jN3vR47HK5qlxte4a17n9sbGx06+vr3a5du3z58uXLly9fviZ3rZGs7N69u9vc3CR3McYYY4yZHGusrDhZMcYYY8yUWWOZxRhjjDFmyjhhMcYYY8zkccJijDHGmMnjhMUYY4wxk8cJizHGGGMmjxMWY4wxxkweJyzGGGOMmTxOWIwxxhgzeZywGGOMMWbyOGExxhhjzORxwmKMMcaYyeOExRhjjDGTxwmLMcYYYybPXiUs999/f7fffvtVr4MOOqg75ZRTuueee677888/Z59YPt9++2137LHHdldfffXszvL45JNPugceeGD2qs3777/fHXrooUVfAvm4x3tjUX2L9vGvv/7qXnnlle6YY44pY3XEEUd0H3300ezd6fPOO+90hxxySLn4txnPyy+//H8+W7soF8vr9c8//9yde+65xdfwubGovugTy4QY9Oyzz3Zvvvnm7M6+Bf3ddttt3VFHHVX0sP/++xd/5B7vrRrEokVtYQy1WGr+O2xJwnL66ad3119//R7XpZde2h188MHFEW+88cbujz/+mH1quWxXwjKmnaklLJ999lkJlMj/+OOPd6+++mr322+/zd6dPnfccUexrQMPPLDYFgmYGYcShprvxuvDDz/co/yqJixZ/n0JDwfojdh44okndtdee225+Df3jj/++O7zzz+flV4NnLCY7WBLEpaW8Xz11VfF+Q4//PDu448/nt1dLquSsOwNe5uwvP7662Wyv/fee2d3VofvvvuuO+mkk7qLLrqou+CCC8q/uWfGMTZh2OoJf2z7e8tWy78oPLhdccUVZQX6hRdemN39BxLvp556qrx38cUXr9RDhBMWsx0sNWEBnoYp89hjj83uLBcnLPPZ7sliK1lfXy/J1iOPPFJsiifS3bt3z941QxlrA1s94W+3DW61/IuiuMHqVG3rhyTlwgsvLP6Nn68KTljMdrD0hCWXIWBgcC+++GJ3zjnnlAnn5JNPLtsU8P3335dl/sMOO6x8jqX/6667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" InformativeScreenshot="1885e8b0c22ea589d8ffebc8f4b5be66.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Price History and Price Tracker for Amazon, Flipkart &amp;amp; more' /&gt;" SearchSteps="FuzzySelector">
+                                <uix:TargetAnchorable.Anchors>
+                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                    <uix:Target DesignTimeRectangle="1140, 449, 194, 45" ElementType="Button" FriendlyName="'Check Price History'" FullSelectorArgument="&lt;webctrl aaname='Check Price History' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Check Price History' tag='BUTTON' type='' check:text='Check Price History' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAMYAAAAxCAYAAACBDNb8AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAATuSURBVHhe7Z0/r0xRFMXfd+CJkIiEiIjC+wpUdHqUKqGT+AB0Er1KoaWmEoVkZDqZzldgkkmUHLOuLNmz7Hvmjnfv9eSunfyYObPPPmf/WTMjitmbzWbFGDMri8WiLJfLAttr/rTZbGW1WpX5fN6IY0MYP76+Kd8/3SjfP+yvOWbMBFjP+nrmMfswiAOfHL+F0Ygi3WjMNKA48LXqtzB+fVLkG4yZBGsNwDaF4a9PZvLsN1oQYWSOxkwLmIVhjACzMIwRYBaGMQLMwjBGgFkYxggwC8MYAWZhGCPALAxjBJiFYYwAszCMEWAWhjECbFRhvH56phwcXNng44tTGz7PHp5r1vF3XB+CL29PlNs3L6X3qJHlQRAPcbN9kTHzrJ2FvPHao7sXyrd3x8vnVyfLjWuXG/BY/WvA//GD802c7PX/BdgowkChUHgOjxIbNubADCEM0EUcY+ZZO6svYWiczOd/ATaKMNgYHRiuAw5mrYl9c1hh6BBwqHaNNzS1mvY10BbGjtTegTiYcYhiE1lskL0L6zt3NowxBojDkQmD/rV3zDZh4DHW8Bp8YnzmBXBGzDOLTfA8vg5irC7v7G1nAebLXNr6Fc/UWHpnEO+tezUn7r9362IDHt+/c7Fcv/rnPWKN2bO+gQ0uDC185hPRIkZijDa/WPSsYYBNVWHwrnzOOArjak4cKu6P8QkbzfvzLmBbTnEolNp9s7MIc2YumTDa7sV4WZ2xVrtvvEu2H6/zXOYPeL/sjbIvYIMLg0nrELXBYsTGsHlcy4qja3EoWVj6ME70efnkbLMe/dvIGhlhrjG+5s88OSC8G9Y45MybOekQR59afXlWDe7XGmENr8Gn7V5xLd6DdWIsrGV5xnpybVvMbT06DLAjKwwODNBmxUIq9OGe2DwlDi7pcs/a+fHeMX5sONA8syFQuCejlmdtH+G5Wutsv+YC9P4Aj7GmQ6y5t80I68e7MGa82xDAjuxXKRYNaLNqgwlwJs/dVRjcn/mTtkYquwijS0zuyagNS1ZTov3RWsOnrU7xrhoH4DHWNHfm2iV33h0+ekb06xPYP/3HN4uHpLmWNVFjdBki7ukqDMR6//x0p8J3OR/sIowuTc9q04XaPj231i8AH/hiD2BeGif6xf4CvU+tnjEu/o8ki9c3sMGFAVgIHVKuAxZYiwa0WXwe97GAPCMOJQupg6rPa82M1BoZ0fjxNc0zy0nzZo58Dp8ud8lqShiT+/XMLIesTowDX+zBGu8W78v4MV4th3i+xh8K2CjC0OSU2LCsidqs6KewUYAFV9iArOlZg5VaIyNZfJLl2ZYTfeJAKho/kp1FmC9zyWrdVsfowzgEZ9X6Hu+yrZ7x/CyHvoGNIgySFbjLwGTNir4E8fka0YbF4rcNLuNm8cC2RpJdhQG0Rvp6Jg6NrbSdBVifmjCA3it74+A5IJ4V14HWdVs9eSf4bMu1D2CjCsOYv4HizcQ4BDALwxxZ9FNKP2mGAmZhmCMLPylA9jVwKGAWhjECzMIwRoBZGMYIMAvDGAFmYRgjwCwMYwSYhWGMALMwjBFgFoYxAszCMEaAiTD8q61m6mS/2urf+TZTJ/udb/wqfupszESABmAbwoA14mg+Ofy1ykyF9ayvZ56iWK1WZbFYbArDZpuyQRTz+bwsl8uyh48NY8ys+aSAKEop5Scdc2p3nCDs4gAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector" />
+                                  </scg:List>
+                                </uix:TargetAnchorable.Anchors>
+                              </uix:TargetAnchorable>
+                            </uix:NCheckState.Target>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </uix:NCheckState>
+                          <uix:NCheckState Exists="{x:Null}" DisplayName="Check App State 'Price History of'" sap:VirtualizedContainerService.HintSize="1740.8,2455.2" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="d7638f93-0eab-4877-9964-571d7f7e511c" Timeout="20" Version="V1">
+                            <uix:NCheckState.IfExists>
+                              <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="843.2,2236.8" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <uix:NGetText ContinueOnError="True" DisplayName="Get Text 'Product name'" sap:VirtualizedContainerService.HintSize="801.6,157.6" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="d7638f93-0eab-4877-9964-571d7f7e511c" Version="V1">
+                                  <uix:NGetText.Target>
+                                    <uix:TargetAnchorable BrowserURL="https://www.pricebefore.com/apple-iphone-13-128gb-blue-p660973.html" DesignTimeRectangle="365, 505, 1188, 28" FriendlyName="'Apple iPhone'" FullSelectorArgument="&lt;webctrl tag='H1' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='H1' type='' /&gt;" Guid="aeeafc4b-d9d4-4148-a633-1f085e91fdea" InformativeScreenshot="6a70d59ec1c9dbc35a1ed24324ff8683.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Price History of Apple iPhone 13' /&gt;" SearchSteps="FuzzySelector" />
+                                  </uix:NGetText.Target>
+                                  <uix:NGetText.Text>
+                                    <OutArgument x:TypeArguments="x:String">[strproductname]</OutArgument>
+                                  </uix:NGetText.Text>
+                                </uix:NGetText>
+                                <uix:NGetText ContinueOnError="True" DisplayName="Get Text 'MRP'" sap:VirtualizedContainerService.HintSize="801.6,157.6" sap2010:WorkflowViewState.IdRef="NGetText_2" ScopeIdentifier="d7638f93-0eab-4877-9964-571d7f7e511c" Version="V1">
+                                  <uix:NGetText.Target>
+                                    <uix:TargetAnchorable BrowserURL="https://www.pricebefore.com/apple-iphone-13-128gb-blue-p660973.html" DesignTimeRectangle="1159, 790, 59, 18" ElementType="Text" FriendlyName="'₹59,900'" FullSelectorArgument="&lt;webctrl aaname='₹59,900' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='SPAN' type='' /&gt;" Guid="da83e331-cfdc-4ffa-ab08-f9c5883658a2" InformativeScreenshot="f3efb065edb558468161ecc691d1d39d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Price History of Apple iPhone 13' /&gt;" SearchSteps="FuzzySelector">
+                                      <uix:TargetAnchorable.Anchors>
+                                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                          <uix:Target DesignTimeRectangle="965, 790, 36, 18" FriendlyName="'MRP'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;b' isleaf='1' tableRow='3' tag='B' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' isleaf='1' aaname='MRP' tag='B' check:text='MRP' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACgAAAAWCAYAAACyjt6wAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAFDSURBVEhL7ZMxEkRAEEX3cm7gAlzAAZxCLBaLnUEsdAWpcLae3a96x8wuRbCBX9WF7j89Tw8P9+e6Ac/qBjyrFXAcR5emqUuSZIm2bd+Vl/q+X2sEz6iqqo+8H/KhaZpcnudBH2H3ZB3eKGBZlm6e53d1C7IXkJD3FyBhIfFHAWmEAYUa+4Bcffk128dOFsmrweAtimILSGRZ9tFENfJ6iT2ATMPfNAbIM3k7GBQEbJpmMWvc2qiu680GMUCAALO1IxOUgoBd1y1XmbWYfAwwFvShN7KAsfDBg4DDMCxw3LOApgSeI4CanPQN0L6IVRCQe21sr6EjsnWkPuT84/p2xDFFAWlAIwXf4R5AZNfa/KWAdhLK7QVEymstuhTQ/oU0pfkRQOvVUV8KiPzNjwAiPNSI2CfySyvgv+oGPKsb8JycewLRZM+/6B6KCgAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image" />
+                                        </scg:List>
+                                      </uix:TargetAnchorable.Anchors>
+                                    </uix:TargetAnchorable>
+                                  </uix:NGetText.Target>
+                                  <uix:NGetText.Text>
+                                    <OutArgument x:TypeArguments="x:String">[strMRP]</OutArgument>
+                                  </uix:NGetText.Text>
+                                </uix:NGetText>
+                                <uix:NGetText ContinueOnError="True" DisplayName="Get Text 'Current Price'" sap:VirtualizedContainerService.HintSize="801.6,157.6" sap2010:WorkflowViewState.IdRef="NGetText_3" ScopeIdentifier="d7638f93-0eab-4877-9964-571d7f7e511c" Version="V1">
+                                  <uix:NGetText.Target>
+                                    <uix:TargetAnchorable BrowserURL="https://www.pricebefore.com/apple-iphone-13-128gb-midnight-p649238.html" DesignTimeRectangle="1159, 864, 59, 18" ElementType="Text" FriendlyName="'₹52,999'" FullSelectorArgument="&lt;webctrl aaname='₹52,999' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='SPAN' type='' /&gt;" Guid="695c19f5-b15f-47d7-82fb-b63336b3b424" InformativeScreenshot="1d9d82126584ee017f624b8c7df3dd9f.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Price History of Apple iPhone 13' /&gt;" SearchSteps="FuzzySelector">
+                                      <uix:TargetAnchorable.Anchors>
+                                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                          <uix:Target DesignTimeRectangle="965, 864, 103, 18" FriendlyName="'Current Price'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;b' isleaf='1' tag='B' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' isleaf='1' tag='B' aaname='Current Price' check:text='Current Price' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGsAAAAWCAYAAADHA2ITAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAI8SURBVGhD7ZYxjsIwFET3ctyAE3ABDkBPz0moaWkp6OgQN6ClzGoQE00+Y4dAwq4lj/QFMbb/jF8S8dNUFaMKqyBVWAWpwipIFVYhut1uHtZ2u21ms1mnDofD49fyhDyolK7Xa7NYLJ4ys3JrKd1j7LNC/+Vy2YUFeqvV6sksa7PZPGaWI3iG909gofqATQkLOp/PXVgMhqZoTnF8KiNTaiismI/rcRPjZv4LAVTnycLAfD6/F76rGEaDIHwM4UJzHpqhuOZ0OrX91uv1fVx7cx1Le2uf/X7feRvgcCH3lnDZoBwsXGMcv2OenpP6Ph6PyT1iFnfj6AOR8tnCoqlX76ChsLRgjKF1nAeixrUYUvu4wryxYMUnK+X7crnYPfqyOJ+s6KWF5Q4/Jze/D5Y219AIRHEc+2A/N6Z92F9DqyceFg/HSfdLFb2nfLvsOpdj+MQ1s/BaPbsx6Guw4r4MgsJ3SuHG4lzXB3K9PoUV/aV8O0+pQ1elnjwUgVJfew2OAQuFfaeEpfs5DYGVyq7KwYo9XvqDgUZoqIGdkTFh5QKWAguf0U8U/eGzTy0siAvRFM0ppR8h6FyOuXmvwuK47sHQ7JU63Bys3GGk9nMaAstlieuZTfdLnVkHljZ0pYHViCuaGwoL0ptDC3tB78Bi6XxqKlhQKgvPEj7h182JXjqwKIbOLYQwpnN2u92T4XdgQTEkQUFDYMUb0OWYEhYUz5OgKAfM+bCwqv6nKqyCVGEVpAqrIFVYxahpfgE/Ab7W2gKgQwAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image" />
+                                        </scg:List>
+                                      </uix:TargetAnchorable.Anchors>
+                                    </uix:TargetAnchorable>
+                                  </uix:NGetText.Target>
+                                  <uix:NGetText.Text>
+                                    <OutArgument x:TypeArguments="x:String">[strcurrentPrice]</OutArgument>
+                                  </uix:NGetText.Text>
+                                </uix:NGetText>
+                                <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="801.6,371.2" sap2010:WorkflowViewState.IdRef="CommentOut_10">
+                                  <ui:CommentOut.Body>
+                                    <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="766.4,292.8" sap2010:WorkflowViewState.IdRef="Sequence_37">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                      <ui:AnchorBase AnchorPosition="Auto" DisplayName="Anchor Base" sap:VirtualizedContainerService.HintSize="724.8,200" sap2010:WorkflowViewState.IdRef="AnchorBase_1">
+                                        <ui:AnchorBase.Action>
+                                          <ActivityAction x:TypeArguments="ui:Anchor">
+                                            <ActivityAction.Argument>
+                                              <DelegateInArgument x:TypeArguments="ui:Anchor" Name="ContextAnchor" />
+                                            </ActivityAction.Argument>
+                                            <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text 'DIV'" sap:VirtualizedContainerService.HintSize="333.6,107.2" sap2010:WorkflowViewState.IdRef="GetValue_4">
+                                              <ui:GetValue.Target>
+                                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="6e7a2aaf-f197-40c3-8d90-a0e736779672" InformativeScreenshot="981d49530f78c38fb99d72d7fdf2dac8" Selector="&lt;webctrl tag='DIV' /&gt;">
+                                                  <ui:Target.TimeoutMS>
+                                                    <InArgument x:TypeArguments="x:Int32" />
+                                                  </ui:Target.TimeoutMS>
+                                                  <ui:Target.WaitForReady>
+                                                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                                                  </ui:Target.WaitForReady>
+                                                </ui:Target>
+                                              </ui:GetValue.Target>
+                                              <ui:GetValue.Value>
+                                                <OutArgument x:TypeArguments="x:String">[strLowestPrice]</OutArgument>
+                                              </ui:GetValue.Value>
+                                            </ui:GetValue>
+                                          </ActivityAction>
+                                        </ui:AnchorBase.Action>
+                                        <ui:AnchorBase.AnchorProvider>
+                                          <ui:WaitUiElementAppear FoundElement="{x:Null}" WaitActive="{x:Null}" WaitVisible="{x:Null}" DisplayName="Find Element 'DIV'" sap:VirtualizedContainerService.HintSize="333.6,107.2" sap2010:WorkflowViewState.IdRef="WaitUiElementAppear_1">
+                                            <ui:WaitUiElementAppear.Target>
+                                              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="b9a297cd-9b0e-41e2-a8b1-0cfa9686bc59" InformativeScreenshot="ba9da5d15c7713ab1764a7b389dfc876" Selector="&lt;webctrl aaname='Lowest Price' tag='DIV' /&gt;">
+                                                <ui:Target.TimeoutMS>
+                                                  <InArgument x:TypeArguments="x:Int32" />
+                                                </ui:Target.TimeoutMS>
+                                                <ui:Target.WaitForReady>
+                                                  <InArgument x:TypeArguments="ui:WaitForReady" />
+                                                </ui:Target.WaitForReady>
+                                              </ui:Target>
+                                            </ui:WaitUiElementAppear.Target>
+                                          </ui:WaitUiElementAppear>
+                                        </ui:AnchorBase.AnchorProvider>
+                                      </ui:AnchorBase>
+                                    </Sequence>
+                                  </ui:CommentOut.Body>
+                                </ui:CommentOut>
+                                <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="801.6,371.2" sap2010:WorkflowViewState.IdRef="CommentOut_11">
+                                  <ui:CommentOut.Body>
+                                    <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="766.4,292.8" sap2010:WorkflowViewState.IdRef="Sequence_38">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                      <ui:AnchorBase AnchorPosition="Auto" DisplayName="Anchor Base" sap:VirtualizedContainerService.HintSize="724.8,200" sap2010:WorkflowViewState.IdRef="AnchorBase_2">
+                                        <ui:AnchorBase.Action>
+                                          <ActivityAction x:TypeArguments="ui:Anchor">
+                                            <ActivityAction.Argument>
+                                              <DelegateInArgument x:TypeArguments="ui:Anchor" Name="ContextAnchor" />
+                                            </ActivityAction.Argument>
+                                            <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text 'DIV'" sap:VirtualizedContainerService.HintSize="333.6,107.2" sap2010:WorkflowViewState.IdRef="GetValue_5">
+                                              <ui:GetValue.Target>
+                                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="f4a81b2c-6345-41b5-9369-83194fbf3343" InformativeScreenshot="a0a461f1dc8d5ee7b85a56d09418663b" Selector="&lt;webctrl tag='DIV' /&gt;">
+                                                  <ui:Target.TimeoutMS>
+                                                    <InArgument x:TypeArguments="x:Int32" />
+                                                  </ui:Target.TimeoutMS>
+                                                  <ui:Target.WaitForReady>
+                                                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                                                  </ui:Target.WaitForReady>
+                                                </ui:Target>
+                                              </ui:GetValue.Target>
+                                              <ui:GetValue.Value>
+                                                <OutArgument x:TypeArguments="x:String">[strHighestPrice]</OutArgument>
+                                              </ui:GetValue.Value>
+                                            </ui:GetValue>
+                                          </ActivityAction>
+                                        </ui:AnchorBase.Action>
+                                        <ui:AnchorBase.AnchorProvider>
+                                          <ui:WaitUiElementAppear FoundElement="{x:Null}" WaitActive="{x:Null}" WaitVisible="{x:Null}" DisplayName="Find Element 'DIV'" sap:VirtualizedContainerService.HintSize="333.6,107.2" sap2010:WorkflowViewState.IdRef="WaitUiElementAppear_2">
+                                            <ui:WaitUiElementAppear.Target>
+                                              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="9b8acd15-1487-4cfb-a933-ab80233a105a" InformativeScreenshot="a784d6b4ec37e89f5a8589dd58bc831c" Selector="&lt;webctrl aaname='Highest Price' tag='DIV' /&gt;">
+                                                <ui:Target.TimeoutMS>
+                                                  <InArgument x:TypeArguments="x:Int32" />
+                                                </ui:Target.TimeoutMS>
+                                                <ui:Target.WaitForReady>
+                                                  <InArgument x:TypeArguments="ui:WaitForReady" />
+                                                </ui:Target.WaitForReady>
+                                              </ui:Target>
+                                            </ui:WaitUiElementAppear.Target>
+                                          </ui:WaitUiElementAppear>
+                                        </ui:AnchorBase.AnchorProvider>
+                                      </ui:AnchorBase>
+                                    </Sequence>
+                                  </ui:CommentOut.Body>
+                                </ui:CommentOut>
+                                <ui:GetValue ContinueOnError="True" DisplayName="Get Text 'DIV'" sap:VirtualizedContainerService.HintSize="801.6,107.2" sap2010:WorkflowViewState.IdRef="GetValue_2">
+                                  <ui:GetValue.Target>
+                                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="b6375442-82d4-443f-8d0c-8cf14005477f" InformativeScreenshot="3beef3c89816a35ac434cf6943cd2bb7" Selector="&lt;webctrl aaname='₹47,999' tag='DIV' /&gt;">
+                                      <ui:Target.TimeoutMS>
+                                        <InArgument x:TypeArguments="x:Int32" />
+                                      </ui:Target.TimeoutMS>
+                                      <ui:Target.WaitForReady>
+                                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                                      </ui:Target.WaitForReady>
+                                    </ui:Target>
+                                  </ui:GetValue.Target>
+                                  <ui:GetValue.Value>
+                                    <OutArgument x:TypeArguments="x:String">[strLowestPrice]</OutArgument>
+                                  </ui:GetValue.Value>
+                                </ui:GetValue>
+                                <ui:GetValue ContinueOnError="True" DisplayName="Get Text 'DIV'" sap:VirtualizedContainerService.HintSize="801.6,107.2" sap2010:WorkflowViewState.IdRef="GetValue_3">
+                                  <ui:GetValue.Target>
+                                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="a142dd65-dc9d-4f4b-ac18-f8e590eb63c7" InformativeScreenshot="67b96bb81d9ef4a9d04124ea698e35f4" Selector="&lt;webctrl aaname='₹74,900' tag='DIV' /&gt;">
+                                      <ui:Target.TimeoutMS>
+                                        <InArgument x:TypeArguments="x:Int32" />
+                                      </ui:Target.TimeoutMS>
+                                      <ui:Target.WaitForReady>
+                                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                                      </ui:Target.WaitForReady>
+                                    </ui:Target>
+                                  </ui:GetValue.Target>
+                                  <ui:GetValue.Value>
+                                    <OutArgument x:TypeArguments="x:String">[strHighestPrice]</OutArgument>
+                                  </ui:GetValue.Value>
+                                </ui:GetValue>
+                                <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{strproductname,strMRP,strcurrentPrice,strLowestPrice,strHighestPrice,product_url,&quot;Success&quot;}]" DataTable="[dtpricebefore]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="801.6,188" sap2010:WorkflowViewState.IdRef="AddDataRow_1" />
+                                <uix:NNavigateBrowser DisplayName="Navigate Browser - Go Back" sap:VirtualizedContainerService.HintSize="801.6,82.4" sap2010:WorkflowViewState.IdRef="NNavigateBrowser_1" Version="V1" />
+                                <uix:NNavigateBrowser Action="Refresh" DisplayName="Navigate Browser - Refresh" sap:VirtualizedContainerService.HintSize="801.6,82.4" sap2010:WorkflowViewState.IdRef="NNavigateBrowser_4" Version="V1" />
+                              </Sequence>
+                            </uix:NCheckState.IfExists>
+                            <uix:NCheckState.IfNotExists>
+                              <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="844.8,1012.8" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <uix:NCheckState Exists="{x:Null}" DisplayName="Check App State 'INPUT search-box-home'" sap:VirtualizedContainerService.HintSize="803.2,918.4" sap2010:WorkflowViewState.IdRef="NCheckState_3" ScopeIdentifier="d7638f93-0eab-4877-9964-571d7f7e511c" Timeout="5" Version="V1">
+                                  <uix:NCheckState.IfExists>
+                                    <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="375.2,415.2" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="333.6,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Warn" Message="[&quot;Empty URL&quot;]" />
+                                      <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{strproductname,strMRP,strcurrentPrice,strLowestPrice,strHighestPrice,product_url,&quot;Failure-Empty URL&quot;}]" DataTable="[dtpricebefore]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="333.6,188" sap2010:WorkflowViewState.IdRef="AddDataRow_3" />
+                                    </Sequence>
+                                  </uix:NCheckState.IfExists>
+                                  <uix:NCheckState.IfNotExists>
+                                    <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="375.2,660" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="333.6,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Warn" Message="[&quot;Invalid URL&quot;]" />
+                                      <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{strproductname,strMRP,strcurrentPrice,strLowestPrice,strHighestPrice,product_url,&quot;Failure-Invalid URL&quot;}]" DataTable="[dtpricebefore]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="333.6,188" sap2010:WorkflowViewState.IdRef="AddDataRow_4" />
+                                      <uix:NNavigateBrowser DisplayName="Navigate Browser - Go Back" sap:VirtualizedContainerService.HintSize="333.6,82.4" sap2010:WorkflowViewState.IdRef="NNavigateBrowser_3" Version="V1" />
+                                      <uix:NNavigateBrowser Action="Refresh" DisplayName="Navigate Browser - Refresh" sap:VirtualizedContainerService.HintSize="333.6,82.4" sap2010:WorkflowViewState.IdRef="NNavigateBrowser_5" Version="V1" />
+                                    </Sequence>
+                                  </uix:NCheckState.IfNotExists>
+                                  <uix:NCheckState.Target>
+                                    <uix:TargetAnchorable BrowserURL="https://www.pricebefore.com/" DesignTimeRectangle="586, 449, 552, 45" ElementType="InputBox" FriendlyName="'INPUT search-box-home'" FullSelectorArgument="&lt;webctrl id='search-box-home' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='search-box-home' tag='INPUT' type='text' aaname='Search' /&gt;" Guid="506a2515-0d2f-442c-8f58-7494b770230b" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAiwAAAAxCAYAAAD5oPKFAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAABFmSURBVHhe7Z0HjyQ1E4b3T5NFzjlnEDkJEBmRRYaDI7Mggsg5LSw5Nt9j5kV19dk93XM7ez3L+0jN3vR47HK5qlxte4a17n9sbGx06+vr3a5du3z58uXLly9fviZ3rZGs7N69u9vc3CR3McYYY4yZHGusrDhZMcYYY8yUWWOZxRhjjDFmyjhhMcYYY8zkccJijDHGmMnjhMUYY4wxk8cJizHGGGMmjxMWY4wxxkweJyzGGGOMmTxOWIwxxhgzeZywGGOMMWbyOGExxhhjzORxwmKMMcaYyeOExRhjjDGTxwmLMcYYYybPXiUs999/f7fffvtVr4MOOqg75ZRTuueee677888/Z59YPt9++2137LHHdldfffXszvL45JNPugceeGD2qs3777/fHXrooUVfAvm4x3tjUX2L9vGvv/7qXnnlle6YY44pY3XEEUd0H3300ezd6fPOO+90hxxySLn4txnPyy+//H8+W7soF8vr9c8//9yde+65xdfwubGovugTy4QY9Oyzz3Zvvvnm7M6+Bf3ddttt3VFHHVX0sP/++xd/5B7vrRrEokVtYQy1WGr+O2xJwnL66ad3119//R7XpZde2h188MHFEW+88cbujz/+mH1quWxXwjKmnaklLJ999lkJlMj/+OOPd6+++mr322+/zd6dPnfccUexrQMPPLDYFgmYGYcShprvxuvDDz/co/yqJixZ/n0JDwfojdh44okndtdee225+Df3jj/++O7zzz+flV4NnLCY7WBLEpaW8Xz11VfF+Q4//PDu448/nt1dLquSsOwNe5uwvP7662Wyv/fee2d3VofvvvuuO+mkk7qLLrqou+CCC8q/uWfGMTZh2OoJf2z7e8tWy78oPLhdccUVZQX6hRdemN39BxLvp556qrx38cUXr9RDhBMWsx0sNWEBnoYp89hjj83uLBcnLPPZ7sliK1lfXy/J1iOPPFJsiifS3bt3z941QxlrA1s94W+3DW61/IuiuMHqVG3rhyTlwgsvLP6Nn68KTljMdrD0hCWXIWBgcC+++GJ3zjnnlAnn5JNPLtsU8P3335dl/sMOO6x8jqX/6667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" InformativeScreenshot="0a5ee319d9340b730cd2d3f273e27316.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Price History and Price Tracker for Amazon, Flipkart &amp;amp; more' /&gt;" SearchSteps="FuzzySelector">
+                                      <uix:TargetAnchorable.Anchors>
+                                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                          <uix:Target DesignTimeRectangle="1140, 449, 194, 45" ElementType="Button" FriendlyName="'Check Price History'" FullSelectorArgument="&lt;webctrl aaname='Check Price History' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Check Price History' tag='BUTTON' type='' check:text='Check Price History' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAMYAAAAxCAYAAACBDNb8AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAATuSURBVHhe7Z0/r0xRFMXfd+CJkIiEiIjC+wpUdHqUKqGT+AB0Er1KoaWmEoVkZDqZzldgkkmUHLOuLNmz7Hvmjnfv9eSunfyYObPPPmf/WTMjitmbzWbFGDMri8WiLJfLAttr/rTZbGW1WpX5fN6IY0MYP76+Kd8/3SjfP+yvOWbMBFjP+nrmMfswiAOfHL+F0Ygi3WjMNKA48LXqtzB+fVLkG4yZBGsNwDaF4a9PZvLsN1oQYWSOxkwLmIVhjACzMIwRYBaGMQLMwjBGgFkYxggwC8MYAWZhGCPALAxjBJiFYYwAszCMEWAWhjECbFRhvH56phwcXNng44tTGz7PHp5r1vF3XB+CL29PlNs3L6X3qJHlQRAPcbN9kTHzrJ2FvPHao7sXyrd3x8vnVyfLjWuXG/BY/WvA//GD802c7PX/BdgowkChUHgOjxIbNubADCEM0EUcY+ZZO6svYWiczOd/ATaKMNgYHRiuAw5mrYl9c1hh6BBwqHaNNzS1mvY10BbGjtTegTiYcYhiE1lskL0L6zt3NowxBojDkQmD/rV3zDZh4DHW8Bp8YnzmBXBGzDOLTfA8vg5irC7v7G1nAebLXNr6Fc/UWHpnEO+tezUn7r9362IDHt+/c7Fcv/rnPWKN2bO+gQ0uDC185hPRIkZijDa/WPSsYYBNVWHwrnzOOArjak4cKu6P8QkbzfvzLmBbTnEolNp9s7MIc2YumTDa7sV4WZ2xVrtvvEu2H6/zXOYPeL/sjbIvYIMLg0nrELXBYsTGsHlcy4qja3EoWVj6ME70efnkbLMe/dvIGhlhrjG+5s88OSC8G9Y45MybOekQR59afXlWDe7XGmENr8Gn7V5xLd6DdWIsrGV5xnpybVvMbT06DLAjKwwODNBmxUIq9OGe2DwlDi7pcs/a+fHeMX5sONA8syFQuCejlmdtH+G5Wutsv+YC9P4Aj7GmQ6y5t80I68e7MGa82xDAjuxXKRYNaLNqgwlwJs/dVRjcn/mTtkYquwijS0zuyagNS1ZTov3RWsOnrU7xrhoH4DHWNHfm2iV33h0+ekb06xPYP/3HN4uHpLmWNVFjdBki7ukqDMR6//x0p8J3OR/sIowuTc9q04XaPj231i8AH/hiD2BeGif6xf4CvU+tnjEu/o8ki9c3sMGFAVgIHVKuAxZYiwa0WXwe97GAPCMOJQupg6rPa82M1BoZ0fjxNc0zy0nzZo58Dp8ud8lqShiT+/XMLIesTowDX+zBGu8W78v4MV4th3i+xh8K2CjC0OSU2LCsidqs6KewUYAFV9iArOlZg5VaIyNZfJLl2ZYTfeJAKho/kp1FmC9zyWrdVsfowzgEZ9X6Hu+yrZ7x/CyHvoGNIgySFbjLwGTNir4E8fka0YbF4rcNLuNm8cC2RpJdhQG0Rvp6Jg6NrbSdBVifmjCA3it74+A5IJ4V14HWdVs9eSf4bMu1D2CjCsOYv4HizcQ4BDALwxxZ9FNKP2mGAmZhmCMLPylA9jVwKGAWhjECzMIwRoBZGMYIMAvDGAFmYRgjwCwMYwSYhWGMALMwjBFgFoYxAszCMEaAiTD8q61m6mS/2urf+TZTJ/udb/wqfupszESABmAbwoA14mg+Ofy1ykyF9ayvZ56iWK1WZbFYbArDZpuyQRTz+bwsl8uyh48NY8ys+aSAKEop5Scdc2p3nCDs4gAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector" />
+                                        </scg:List>
+                                      </uix:TargetAnchorable.Anchors>
+                                    </uix:TargetAnchorable>
+                                  </uix:NCheckState.Target>
+                                </uix:NCheckState>
+                              </Sequence>
+                            </uix:NCheckState.IfNotExists>
+                            <uix:NCheckState.Target>
+                              <uix:TargetAnchorable BrowserURL="https://www.pricebefore.com/apple-iphone-13-128gb-blue-p660973.html" DesignTimeRectangle="365, 474, 1188, 25" FriendlyName="'Price History of'" FullSelectorArgument="&lt;webctrl tag='H2' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='H2' type='' aaname='Price History of' check:text='Price History of' /&gt;" Guid="c9410c59-6c9e-4899-b563-791f7ee7b4da" ImageBase64="iVBORw0KGgoAAAANSUhEUgAABKgAAAAdCAYAAACOlVTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAARVSURBVHhe7dwxTuRKEIDhd1pSJCKuQErIFQhJuQIpIVcgJOSpELUqWtW2Z4Zdw+j7pNaitt1um+yX2f/eAQAAAGBHAhUAAAAAuxKoAAAAANiVQAUAAADArgQqAAAAAHYlUAEAAACwqy+B6u7u7v3i4mI6Li8v319eXj7P3ibXPOba7xL3jfvHPmI/ndk+v2v/r6+vH2u9vb19zpyP+n5zPD09fR4FAAAAWHZQoMpxSHz4rsBzir0DVbyvWOPm5ubsAlWEt+vr64/ny7Hn7xoAAAD4fY4KVBEkIkz8FqcEqlPVgHOOgWrLuwUAAABY0gaqLtKMX8r8pj/hEqj+nvw6LMbDw8PnLAAAAMB2mwNViACRMSIDVb3m8fHxTwjKr6yW1oxYE9Em16zXjWoIiXFISDolUM3m65p11HA37jnHGKq6tbp91vXu7++/vLurq6uPf7sItuX5R93exwCV72btPAAAAIAlR31BVY/PIkWGkNmaXZTJMZ5bw9g4ahCaqffKfY1m++zmZ+EpR+5pdl6NSEvPNsa62XpxXgSr+Hncf+jC4pJ85m7Uvc/OE6gAAACAQ5z8f1DVa7qvd7rAE+fk1z91voaUXCuOxTkxl+GjXj/74qqqa6yNMfB0++/masCre6rz4/up+6rHaoiKe6U6P+6zrlUDUX1X4/07s3vX301dv55f5wEAAAC2OipQ1a9w6jV1PnUxZxY1MubUubx+DFE1yHT3req5a2MMP+P+a/CJsRZllgJV927S2nuL49UsRNVnX9trXWN837Njs98lAAAAwFYHBaoxWoSlyBK64xEycs2luFSjyNJYCyM10qyN8TnW9l9HDUNpFqiWwlXows9aDMp9dXsdn6tT39MYwEJ97vy9CVQAAADAqQ76T9I7PyFQdTGlWgsvYfYca/PdqPf4l4GqPmccr++vu8do7T11vzeBCgAAADjVrwlU3ddbW62FlzB7jrXnq4GmjnyufxmoQu431nx+fv7z3EvvOa29J4EKAAAA+Bt2CVSzqJFBqsaRY/Y0WgsvYXafQ+5fA04+11KIWlq7O7YlBuU5cd3t7e3Hz1vj3lIQnB0TqAAAAIBT7RKoauyYBZiMIHWuBp5D9hrH47w4P67rzNYb52twGiNOnhsj9h3q+WOgmj1bna/7rfOzGFTv162xpka2el2dr/fesicAAACAJbsEqhA/x1zGjXFk4Am5RjdqRJmp95qdP9tnN1+jTDfqPWqMy1FjVA0/4xgD2NYYlHvOUd/lFuP1dSxFNoEKAAAAOMZugSp08WaMMqmLQlvDS9w37h/XxH46s33O5rsvlWJ0kWY8d3zGbq1una0xqD7v7H2uqWvk6N63QAUAAACc6kug4jxsCXIAAAAAP4VAdWbqV2njV18AAAAAP5FAdSa6PxP09RQAAADwGwhUZ2IMVOIUAAAA8FsIVAAAAADsSqACAAAAYFcCFQAAAAC7EqgAAAAA2NH7+/++O1k9xx/BUwAAAABJRU5ErkJggg==" InformativeScreenshot="50cfa9c30cad4e40772be857dc7ee0fa.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Price History of Apple iPhone 13' /&gt;" SearchSteps="FuzzySelector" />
+                            </uix:NCheckState.Target>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </uix:NCheckState>
+                        </Sequence>
+                      </ActivityAction>
+                    </ui:ForEachRow.Body>
+                  </ui:ForEachRow>
+                </Sequence>
+              </ActivityAction>
+            </uix:NApplicationCard.Body>
+            <uix:NApplicationCard.TargetApp>
+              <uix:TargetApp Area="-9, -9, 1938, 1038" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAGtSURBVDhPpZLNK0RRGMb9C5pz7z1n7lxjGAmRjykxRKSw8LmzwSyslDSryV8gZCssjELJ50SiKJp8xcKCUoiFDbJREvE4515N9xozd2HxdG7vOe/vPPc9T8rnvgP/URwAh4a+Drj4+hHldf4tar/PCsUAouF5y4HRoIyRfhlnM0RfAy0KQgEZJ2Gig8zNQjEA+ObtCkFhLoU7jaHSR5GdyeDNYCASg6+AIjpB4pxYAHerBL58CklmaK6hOJkiOJ0maK9T4CAMnU0KXndtACUcoDoZVof5bcepuiIjRK+JPeFSnE0K8LgpDufrgasAcNGI40gAmR4VOVkU53PW3/jbgerC+mwQeAoDz3PYXhqApmn6fK4XbQD6DCQFXR0NuL9cwdPNEvp6u/kMFLTxWbzsGC+WFOBkDNleFf7yUlRXVYAxF7weiuUhyf4VjBkwjIUk9LRL8BfLaK1VsDAo4V2EytQs9Ccgnedgf5LoKXzYIIZtuyQKgHiiojwKzcUQHed2j34izWVuMssCuF8zQlNbRvUAJcq/WTGAkLD8uGnYftuzHkwkC0DIzrJVDnwD1puJAN1w6AUAAAAASUVORK5CYII=" InformativeScreenshot="8ee2d7e15378cf52b9d6c224895c6850.png" Selector="&lt;html app='chrome.exe' title='Price History and Price Tracker for Amazon, Flipkart &amp;amp; more'/&gt;" Url="[pricebefore_url]" />
+            </uix:NApplicationCard.TargetApp>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </uix:NApplicationCard>
+          <ui:WriteRange AddHeaders="True" DataTable="[dtpricebefore]" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="433.6,116" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="Sheet1" StartingCell="A1" WorkbookPath="C:\Users\monik\OneDrive\Documents\rpa\Project\PriceReport.xlsx" />
+          <ui:SendMail Bcc="{x:Null}" Body="{x:Null}" Cc="{x:Null}" MailMessage="{x:Null}" Name="{x:Null}" ReplyTo="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" DisplayName="Send SMTP Mail Message" Email="210701166@rajalakshmi.edu.in" EnableSSL="True" From="210701166@rajalakshmi.edu.in" sap:VirtualizedContainerService.HintSize="433.6,146.4" sap2010:WorkflowViewState.IdRef="SendMail_1" IsBodyHtml="False" Password="monika@210701166" Port="587" SecureConnection="Auto" Server="smtp.gmail.com" Subject="[product_name.ToString+&quot; price analysis report&quot;]" To="[email]">
+            <ui:SendMail.Files>
+              <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4">
+                <InArgument x:TypeArguments="x:String">C:\Users\monik\OneDrive\Documents\rpa\Project\PriceReport.xlsx</InArgument>
+              </scg:List>
+            </ui:SendMail.Files>
+          </ui:SendMail>
+          <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="433.6,85.6" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;email sent successfully&quot;]" />
+        </Sequence>
+      </TryCatch.Try>
+      <TryCatch.Catches>
+        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="478.4,22.4" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ActivityAction x:TypeArguments="s:Exception">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+            </ActivityAction.Argument>
+            <Sequence sap:VirtualizedContainerService.HintSize="304,151.2" sap2010:WorkflowViewState.IdRef="Sequence_14">
+              <Sequence.Variables>
+                <Variable x:TypeArguments="x:String" Name="exceptionMsg" />
+              </Sequence.Variables>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <Assign sap:VirtualizedContainerService.HintSize="262.4,60" sap2010:WorkflowViewState.IdRef="Assign_2">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="s:Exception">[sysexception]</OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="s:Exception">[exception]</InArgument>
+                </Assign.Value>
+              </Assign>
+            </Sequence>
+          </ActivityAction>
+        </Catch>
+      </TryCatch.Catches>
+    </TryCatch>
+  </Sequence>
+</Activity>
